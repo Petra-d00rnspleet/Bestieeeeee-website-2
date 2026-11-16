@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Bestie 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>♡ Virtual Bestie ♡</h1>
+    <p>Jouw eigen kleine wereld!</p>
+  </header>
+
+  <main>
+    <section id="auth-screen" class="panel">
+      <h2>Welkom bij Virtual Bestie! 🐰</h2>
+      <p>Maak jouw eigen account.</p>
+
+      <div class="auth-tabs">
+        <button id="show-login">Inloggen</button>
+        <button id="show-register">Registreren</button>
+      </div>
+
+      <form id="auth-form">
+        <input id="email" type="email"
+          placeholder="E-mailadres" required>
+
+        <input id="password" type="password"
+          placeholder="Wachtwoord" minlength="8" required>
+
+        <button type="submit" id="auth-submit">
+          Account maken
+        </button>
+      </form>
+
+      <p id="auth-message" role="status"></p>
+    </section>
+
+    <section id="game-screen" hidden>
+      <div class="top-bar">
+        <span id="player-name">Mijn bestie 💗</span>
+        <span>🪙 <strong id="coins">100</strong></span>
+        <button id="logout">Uitloggen</button>
+      </div>
+
+      <section class="room panel">
+        <h2>Mijn kamertje 🏡</h2>
+
+        <div class="room-scene">
+          <div id="pet">🐰</div>
+          <div id="speech">Hoi! Wat gaan we doen? 💕</div>
+          <div class="room-floor">♡ Mijn gezellige kamer ♡</div>
+        </div>
+
+        <div class="actions">
+          <button id="walk">🚶 Wandelen</button>
+          <button id="sleep">🛏️ Slapen</button>
+          <button id="talk">💬 Praten</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Kies jouw bestie</h2>
+        <div class="actions">
+          <button data-pet="🐰">🐰 Konijntje</button>
+          <button data-pet="🐱">🐱 Katje</button>
+          <button data-pet="🐶">🐶 Hondje</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>🛍️ Meubelwinkel</h2>
+        <div class="shop-grid">
+          <button data-item="🛏️" data-price="30">
+            🛏️ Bed - 30 coins
+          </button>
+          <button data-item="🛋️" data-price="25">
+            🛋️ Bank - 25 coins
+          </button>
+          <button data-item="🧸" data-price="15">
+            🧸 Knuffel - 15 coins
+          </button>
+          <button data-item="🌸" data-price="10">
+            🌸 Bloem - 10 coins
+          </button>
+        </div>
+        <div id="inventory"></div>
+      </section>
+
+      <section class="panel">
+        <h2>🎮 Samen spelen</h2>
+        <div class="actions">
+          <button id="tic-tac-toe">Boter-kaas-en-eieren</button>
+          <button id="connect-four">Vier op een rij</button>
+        </div>
+        <div id="game-area"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    Gemaakt met liefde ♡ Virtual Bestie
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
