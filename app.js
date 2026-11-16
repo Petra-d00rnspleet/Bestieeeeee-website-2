@@ -19,12 +19,12 @@ import {
 
 // VERVANG DIT MET JOUW FIREBASE CONFIGURATIE
 const firebaseConfig = {
-  apiKey: "JOUW_API_KEY",
-  authDomain: "JOUW_PROJECT.firebaseapp.com",
-  projectId: "JOUW_PROJECT",
-  storageBucket: "JOUW_PROJECT.firebasestorage.app",
-  messagingSenderId: "JOUW_SENDER_ID",
-  appId: "JOUW_APP_ID"
+  apiKey: "AIzaSyBiuaoaKz-edBcX3LafJJCb6tZ03S71tUQ",
+  authDomain: "bestie-website-2.firebaseapp.com",
+  projectId: "bestie-website-2",
+  storageBucket: "bestie-website-2.firebasestorage.app",
+  messagingSenderId: "366229888785",
+  appId: "1:366229888785:web:ac3b68022c6740399436b0"
 };
 
 const app = initializeApp(firebaseConfig);
