@@ -1,0 +1,164 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  background: #fff0f6;
+  color: #70445b;
+}
+
+header {
+  text-align: center;
+  padding: 30px 15px;
+  background: #f8c9df;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+main {
+  width: min(900px, 94%);
+  margin: 25px auto;
+}
+
+.panel {
+  background: white;
+  border-radius: 22px;
+  padding: 22px;
+  margin-bottom: 22px;
+  box-shadow: 0 5px 18px #eac4d5;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 2px solid #f2c6d9;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+button {
+  background: #f3b4d0;
+  color: #63364d;
+  border: none;
+  border-radius: 13px;
+  padding: 13px 17px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #ed91bb;
+}
+
+button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.auth-tabs,
+.actions,
+.shop-grid,
+.top-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.top-bar {
+  justify-content: space-between;
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.room-scene {
+  min-height: 280px;
+  background: linear-gradient(#ffe2ef 70%, #eac3d6 70%);
+  border-radius: 18px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#pet {
+  font-size: 85px;
+  z-index: 1;
+  transition: transform .6s;
+}
+
+#speech {
+  position: absolute;
+  top: 18px;
+  right: 12px;
+  background: white;
+  padding: 12px;
+  border-radius: 15px;
+}
+
+.room-floor {
+  position: absolute;
+  bottom: 8px;
+  font-weight: bold;
+}
+
+.shop-grid button {
+  flex: 1 1 180px;
+}
+
+#inventory {
+  margin-top: 15px;
+  padding: 12px;
+  background: #fff0f6;
+  border-radius: 12px;
+}
+
+#game-area {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 65px);
+  justify-content: center;
+  gap: 5px;
+}
+
+.board button {
+  height: 65px;
+  font-size: 25px;
+  margin: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+}
+
+@media(max-width: 500px) {
+  header h1 {
+    font-size: 25px;
+  }
+
+  .panel {
+    padding: 15px;
+  }
+}
